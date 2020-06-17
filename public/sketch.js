@@ -64,7 +64,7 @@ let canvas_h = windowHeight;
 
 
     root.append(word, position);
-    document.getElementById("list_new").appendChild(root);
+    document.getElementById("list").appendChild(root);
 
   }
   }
