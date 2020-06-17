@@ -6,9 +6,9 @@ const app = express();
 //import nedb
 const Datastore = require('nedb'); 
 
-
+const port = process.env.PORT || 3000;
 //specify the port that the server will listen
-app.listen(3000, () => console.log('listening at 3000'));
+app.listen(port, () => console.log(`listening at ${port}`));
 //Serve the html index found in 'public' directory.
 app.use(express.static('public'));
 //tell express to use JSON to communicate.
