@@ -1,0 +1,21 @@
+
+#main {
+  padding: 20px 0px 20px 20px;
+  color: black;
+  background-color: gainsboro;
+
+}
+
+#input {
+ padding-bottom: 50px;
+}
+
+#list {
+	background-color: black;
+	color: white;
+	padding: 0px 0 0px 10px;
+}
+
+#noPadding {
+	padding: 0px 0px;
+}

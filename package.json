@@ -1,0 +1,23 @@
+{
+  "name": "cadavreexquis_2.0",
+  "version": "1.0.0",
+  "description": "Collective poem made as an example for the P5 workshop. ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "Collective",
+    "poem",
+    "cadavre",
+    "exquis",
+    "workshop"
+  ],
+  "author": "Alexandra Verzier",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nedb": "^1.8.0"
+  }
+}
