@@ -62,7 +62,7 @@ textSize(titleSize);
 textAlign(CENTER);
 noFill();
 stroke(255, 170);
-text("READ. DRAG. COMPOSE. REPEAT.", width/2, height/2);
+text("READ. DRAG. COMPOSE.", width/2, height/2);
 for (var i = 0; i < allMyWords.length; i++) {
   allMyWords[i].displayWords();
   allMyWords[i].updatePos();

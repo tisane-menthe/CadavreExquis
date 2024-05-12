@@ -42,6 +42,9 @@ let canvas_h = windowHeight;
 
   newEntry.append(position);
   document.getElementById("list").appendChild(newEntry);
+      
+  window.location.replace("https://read-drag-compose.glitch.me/poem.html");
+
 
   });
 
