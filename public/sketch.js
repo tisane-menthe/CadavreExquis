@@ -35,23 +35,24 @@ let canvas_h = windowHeight;
   const myInput = await response.json();
   console.log(myInput);
 
-  const newEntry = document.createElement('p');
+  /*const newEntry = document.createElement('p');
   newEntry.textContent = `user says: ${myInput.data.wordIn}`
   const position = document.createElement('div');
   position.textContent = `and is located at: ${myInput.data.someX}, ${myInput.data.someY}`;
 
   newEntry.append(position);
   document.getElementById("list").appendChild(newEntry);
-      
+  */
   window.location.replace("https://read-drag-compose.glitch.me/poem.html");
 
 
   });
 
   //this function retrieves all the words previously submitted by querying the DB on the server
-  getData();
+//  getData();
 
   //This time i don't need to specify the method bc GET is the default
+ /*
   async function getData() {
     const response_2 = await fetch('/api');
     const listWord = await response_2.json();
@@ -71,6 +72,7 @@ let canvas_h = windowHeight;
 
   }
   }
+*/
 }
 
 
