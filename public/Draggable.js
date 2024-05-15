@@ -2,7 +2,7 @@ class Draggable {
   constructor(word, posX, posY, txtSize) {
     this.word = word;
     this.posX = posX;
-    this.posY = posY;
+    this.posY = posY; 
     this.h = txtSize + 10;
     this.w = 0;
     this.dragged = false;
