@@ -1,4 +1,4 @@
-console.log('this is working');
+console.log('hello world');
 
 let allMyWords = [];
 
@@ -33,7 +33,7 @@ let canvas_h = windowHeight;
   //send the object 'options' to /api. 
   const response = await fetch('/api', options);
   const myInput = await response.json();
-  console.log(myInput);
+  //console.log(myInput);
 
   /*const newEntry = document.createElement('p');
   newEntry.textContent = `user says: ${myInput.data.wordIn}`

@@ -23,7 +23,7 @@ function setup() {
   async function getData() {
     const responseList = await fetch('/api');
     const listWord = await responseList.json();
-    console.log(listWord);
+    //console.log(listWord);
 
     for (item of listWord) {
     allMyWords.push(new Draggable(item.wordIn, item.someX, item.someY, 20));
@@ -50,7 +50,7 @@ function setup() {
 
   const response = await fetch('/memory', options);
   const myInput = await response.json();
-  console.log(myInput);
+  //console.log(myInput);
 
 });
 
@@ -91,10 +91,10 @@ const updateX = update.posX;
 const updateY = update.posY;
 const updatedWord = update.word;
 
-console.log("word : ", updatedWord, " -- update X: ", updateX, " -- updateY : ", updateY);
+//console.log("word : ", updatedWord, " -- update X: ", updateX, " -- updateY : ", updateY);
    
 const data = {updateX, updateY, updatedWord}; 
-console.log(data);
+//console.log(data);
 
 const sendUpdate = {
     //Specify the method
@@ -110,14 +110,14 @@ const sendUpdate = {
   //send the object 'options' to /api. 
   const response = await fetch('/dbUpdate', sendUpdate);
   const myInput = await response.json();
-  console.log(myInput);
+  //console.log(myInput);
     
 
 }
 
 function keyPressed() {
  if (key == 'a' | key == 'A') {
-  console.log("the key is A."); 
+  //console.log("the key is A."); 
 
 
   

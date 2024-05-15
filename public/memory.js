@@ -8,6 +8,7 @@ function setup() {
     const image64 = await response.json();
     console.log("success !");
     console.log(image64);
+    count=image64.length;
 
    for (item of image64) {
 
@@ -15,9 +16,9 @@ function setup() {
 
 
    	const legend = document.createElement('p');
-   	legend.textContent = `something something`;
-	 
-	const image = document.createElement('img'); 
+   	legend.textContent = count.toString();
+	  count-=1;
+	  const image = document.createElement('img'); 
    	image.src = item.img64;
    	
     root.append(legend, image);
