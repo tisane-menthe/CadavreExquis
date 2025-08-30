@@ -19,17 +19,23 @@
     }
 
     .dropdownbtn {
-     font-size: 50px;
-     opacity: 0.5;
+        width: 120px;
+        height: 40px;
+     font-size: 0.9rem;
+     opacity: 1;
+        padding: 10px;
+        background-color: black;
+        color:red;
+
     }
 
     .dropdown_content {
     opacity: 1;
   	background-color: LightGray;
-  	padding: 5px;
+  	padding: 5px 10px 5px 10px;
   	display: none;
     position: absolute;
- 	  width: 200px;
+        min-width: 200px;
     right: 0;
 
     }
@@ -63,7 +69,7 @@
 
 <script src="sketch_final.js"></script>
 <div class="dropdown">
-<button class="dropdownbtn"> ? </button>
+<button class="dropdownbtn"> Info </button>
 <div class="dropdown_content"> 
 <p> this is a prototype. Not mobile-ready <br>
 </p>
