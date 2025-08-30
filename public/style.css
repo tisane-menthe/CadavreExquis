@@ -20,3 +20,11 @@
 #noPadding {
 	padding: 0px 0px;
 }
+
+.title {
+    font-size: 4rem;
+}
+
+a {
+    color: #F0E68C;
+}
