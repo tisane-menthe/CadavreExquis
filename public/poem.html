@@ -4,9 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js" integrity="sha256-Pg1di+fBF53Rbh9oZR/FeD1xsFzTLC963lcac1D0ias=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js" integrity="sha256-Pg1di+fBF53Rbh9oZR/FeD1xsFzTLC963lcac1D0ias=" crossorigin="anonymous">
+
+  </script>
 
   <style>
+
     body {
       padding: 0;
       margin: 0;
@@ -26,7 +29,7 @@
         padding: 10px;
         background-color: black;
         color:red;
-
+        border-radius: 10%;
     }
 
     .dropdown_content {
@@ -37,6 +40,9 @@
     position: absolute;
         min-width: 200px;
     right: 0;
+        border: black solid 2px;
+        font-size: 0.9rem;
+
 
     }
 
@@ -53,6 +59,17 @@
 
     a {
         color: #F0E68C;
+    }
+
+    @font-face {
+        font-family: "Futura";
+        src: url("fonts/futura.otf");
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    * {
+        font-family: "Futura";
     }
 
   </style>
