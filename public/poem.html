@@ -8,101 +8,26 @@
 
   </script>
 
-  <style>
+  <link rel="stylesheet" type="text/css" href="style.css" />
 
-    body {
-      padding: 0;
-      margin: 0;
-    }
-
-    .dropdown {
-    position: relative;
-    display: inline-block;
-    float: right;
-    }
-
-    .dropdownbtn {
-        width: 120px;
-        height: 40px;
-     font-size: 0.9rem;
-     opacity: 1;
-        padding: 10px;
-        background-color: black;
-        color:red;
-        border-radius: 10%;
-    }
-
-    .dropdown_content {
-    opacity: 1;
-  	background-color: LightGray;
-  	padding: 5px 10px 5px 10px;
-  	display: none;
-    position: absolute;
-        min-width: 200px;
-    right: 0;
-        border: black solid 2px;
-        font-size: 0.9rem;
-
-
-    }
-
-  .dropdown:hover .dropdown_content {
-  display: block;
- }
-
- #memory_palace {
-  position: absolute;
-
-  bottom: 0;
-  right: 10px;
- }
-
-    a {
-        color: #F0E68C;
-    }
-
-    @font-face {
-        font-family: "Futura";
-        src: url("fonts/futura.otf");
-        font-weight: 400;
-        font-style: normal;
-    }
-
-    * {
-        font-family: "Futura";
-    }
-
-  </style>
-
-
-  <title> Read. Drag. Compose. </title>
+  <title> Read, drag, compose </title>
 
 </head>
 
 <body>
-
- <script src="Draggable.js"></script>
-
-
-<script src="sketch_final.js"></script>
-<div class="dropdown">
-<button class="dropdownbtn"> Info </button>
-<div class="dropdown_content"> 
-<p> this is a prototype. Not mobile-ready <br>
-</p>
+<div class="container">
+<div id="header" class="item">
+  Fucking poetry
 </div>
+  <div class="item" style="padding-left:20px;">
+    This is a prototype, not mobile ready ~~ not resize friendly<br>
+    Display font: Ready Active by Lucas Descroix & Benjamin Dumond ꨄ︎
+  </div>
 </div>
+<div><div id="sketch-holder"> </div>
+<script src="Draggable.js"></script>
+<script src="poem.js"></script>
 
-<div class="dropdown">
-<button class="dropdownbtn" id="saveButton"> Save </button>
-<div class="dropdown_content">
-<p> By clicking on this button, you save your composition in the memory of the project. </p>
-</div>
-</div>
-
-<div id="memory_palace">
-<p> <i> you can also visit our <a href="/memory.html">memory palace</a> </i> </p>
-</div>
 </body>
 
 </html>

@@ -1,5 +1,3 @@
-//console.log('this is working');
-
 let allMyWords = [];
 let size = 20; 
 let titleSize = 70;
@@ -12,7 +10,7 @@ var canvas;
 function setup() { 
   canvas = createCanvas(windowWidth, windowHeight);
 
-  canvas.position(0, 0);
+  canvas.parent('sketch-holder');
   canvas.style('z-index', '-1');
   canvas_w = width;
   canvas_h = height; 
@@ -30,7 +28,9 @@ function setup() {
   }
   }
 
-  //when click on save, send canvas to image DB. 
+  //when click on save, send canvas to image DB.
+  // removing bc change of style etc. if i want to put it back I just need a button with corresponding id saveButton.
+  /*
   document.getElementById("saveButton").addEventListener("click", async event => {
     canvas.loadPixels();
 
@@ -47,32 +47,28 @@ function setup() {
     //Convert JS object to JSON string
     body: JSON.stringify(data)    
 };
-
   const response = await fetch('/memory', options);
   const myInput = await response.json();
   //console.log(myInput);
 
 });
-
+*/
 }
 function draw() {
-background(255, 0, 0);
+  clear();
 
-textSize(titleSize); 
-textAlign(CENTER);
-noFill();
-stroke(255, 170);
-text("READ. DRAG. COMPOSE.", width/2, height/2);
 for (var i = 0; i < allMyWords.length; i++) {
   allMyWords[i].displayWords();
   allMyWords[i].updatePos();
 }
+
+
 }
 
 function mousePressed() {
   for (var i = 0; i < allMyWords.length; i++) {
   allMyWords[i].startDrag();
-}
+  }
 }
 
 function mouseReleased() {
@@ -111,8 +107,6 @@ const sendUpdate = {
   const response = await fetch('/dbUpdate', sendUpdate);
   const myInput = await response.json();
   //console.log(myInput);
-    
-
 }
 
 function keyPressed() {
@@ -122,7 +116,7 @@ function keyPressed() {
 
   
 
-saveCanvas(canvas, 'niqueluisamere', 'png');
+saveCanvas(canvas, 'abc', 'png');
 
  }
 

@@ -31,8 +31,8 @@ class Draggable {
     if (this.dragged == true) {
       this.posX = mouseX - this.offset_x;
       this.posY = mouseY - this.offset_y;
-
     }
+
   }
 
   startDrag() {
@@ -41,7 +41,6 @@ class Draggable {
       this.offset_x = mouseX - this.posX;
       this.offset_y = mouseY - this.posY;
       this.dragged = true;
-
      }
    }
 

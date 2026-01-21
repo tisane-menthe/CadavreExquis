@@ -12,21 +12,24 @@
 
 </head>
 
-<body id = "main" style="background-color: red;">
+<body id="main">
 <h1 class="title"> A cadavre exquis on the web </h1><br><br>
-<div><a href="/poem.html">Click here to head to the poem</a></div>
+<div>This website collects words from visitors, which can be rearranged to make poems.
+</div>
+
 
 <div id="input">
-<label for="wordInput"> Or<br> enter one word. Choose it carefully. </label>
-<input id="wordInput" type="text" value="?">
-<button id="submit"> Submit </button>
+<label for="wordInput"> Enter one word. </label><br><br>
+<input id="wordInput" type="text" pattern="^\S+$">
+
+<button id="submit"> OK </button>
 </div>
 
 
 <script src="Draggable.js"></script>
 
 
-<script src="sketch.js"></script>
+<script src="home.js"></script>
 <!-- 
 <div id="list">
 <h2> Here are the words previously submitted:  </h2>

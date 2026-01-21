@@ -3,11 +3,19 @@ console.log('hello world');
 let allMyWords = [];
 
 
-function setup() { 
+function setup() {
 
 //position is initalized at random, here in the window width & height
 let canvas_w = windowWidth; 
 let canvas_h = windowHeight;
+
+    const input = document.getElementById('wordInput');
+
+    input.addEventListener('keydown', (e) => {
+        if (e.key === ' ' || e.key === 'Tab') {
+            e.preventDefault();
+        }
+    });
 
 
 //This happens everytime there is a new input > click on the 'submit' button.
@@ -16,7 +24,7 @@ let canvas_h = windowHeight;
       const someY = Math.floor(Math.random() * canvas_h/2); 
 
       const wordIn = document.getElementById('wordInput').value;
-   
+      console.log(wordIn)
       const data = {someX,someY, wordIn}; 
 
     const options = {
