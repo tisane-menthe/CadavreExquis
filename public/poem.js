@@ -7,13 +7,14 @@ let canvas_h;
 
 var canvas;
 
-function setup() { 
-  canvas = createCanvas(windowWidth, windowHeight);
+function setup() {
+  const holder = document.getElementById('sketch-holder-poem');
 
-  canvas.parent('sketch-holder');
-  canvas.style('z-index', '-1');
-  canvas_w = width;
-  canvas_h = height; 
+  const w = holder.offsetWidth;
+  const h = holder.offsetHeight;
+
+  canvas = createCanvas(w, h);
+  canvas.parent('sketch-holder-poem');
   getData();
 
   //This time i don't need to specify the method bc GET is the default
